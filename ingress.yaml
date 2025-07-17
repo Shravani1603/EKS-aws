@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: myapp.example.com
+    - host: k8s-app1-app1ingr-a6f73ddafc-857828184.ap-south-1.elb.amazonaws.com
       http:
         paths:
           - path: /
