@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: your-domain.com
+    - host: myapp.example.com
       http:
         paths:
           - path: /
