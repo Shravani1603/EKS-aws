@@ -4,13 +4,15 @@ metadata:
   name: app1-ingress
   namespace: app1
   annotations:
+    kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: instance
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
+    alb.ingress.kubernetes.io/backend-protocol: HTTP
 spec:
   ingressClassName: alb
   rules:
-    - host: k8s-app1-app1ingr-a6f73ddafc-857828184.ap-south-1.elb.amazonaws.com
+    - host: k8s-app1-app1ingr-a6f73ddafc-857828184.ap-south-1.elb.amazonaws.com.nip.io
       http:
         paths:
           - path: /
