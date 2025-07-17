@@ -1,0 +1,12 @@
+{
+  "name": "my-eks-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js app for EKS CI/CD demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
