@@ -14,13 +14,6 @@ spec:
   ingressClassName: alb
   rules:
     - host: k8s-app1-app1ingr-a6f73ddafc-857828184.ap-south-1.elb.amazonaws.com
-HTTP/1.1 404 Not Found
-Server: awselb/2.0
-Date: Fri, 18 Jul 2025 05:57:15 GMT
-Content-Type: text/plain; charset=utf-8
-Content-Length: 0
-Connection: keep-alive
-
       http:
         paths:
           - path: /
